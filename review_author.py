@@ -25,4 +25,6 @@ def review_author_file():
 if __name__ == "__main__":
     found_error = review_author_file()
     if found_error:
-        sys.exit(1)
+        # sys.exit(1)
+        print("::error file=author.bib::message=There was an error") 
+
