@@ -1,3 +1,5 @@
+import sys
+
 def check_alphabetical_ordering(author_file):
     last_author_key = None
     ordering_error_found = False
@@ -23,4 +25,4 @@ def review_author_file():
 if __name__ == "__main__":
     found_error = review_author_file()
     if found_error:
-        error("There was an error reviewing")
+        sys.exit(1)
