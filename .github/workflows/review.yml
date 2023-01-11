@@ -29,3 +29,5 @@ jobs:
       - name: review author.bib
         run: python3 review_author.py
 
+      - name: step after failure
+        run: echo "Hello"
